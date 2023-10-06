@@ -112,6 +112,7 @@ ul {
 }
 .contact-me-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   color: rgb(3, 61, 3);
 }
