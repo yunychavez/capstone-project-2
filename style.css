@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+.hero-section {
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 70px;
+  color: #e6fdeb;
+}
+h2 {
+  font-size: 40px;
+  color: #e6fdeb;
+}
+.hero-title {
+  background-color: #49a24938;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.resume-section h2,
+h3,
+li {
+  color: rgb(3, 61, 3);
+}
+.resume-section {
+  padding: 3rem;
+}
+.resume-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 15px;
+}
+.relevant-information {
+  padding-top: 3rem;
+}
+.about-me-section {
+  padding: 3rem;
+  background: rgba(0, 128, 0, 0.198);
+}
+.about-me-section h2 {
+  color: rgb(3, 61, 3);
+}
+.about-me-content-container p {
+  color: rgb(3, 61, 3);
+}
+
+.about-me-content-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image-woman text-woman" "text-houseworks image-houseworks" "image-family text-family";
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.about-me-img {
+  justify-self: center;
+}
+.about-me-text {
+  width: 60%;
+  justify-self: center;
+}
+.image-woman {
+  grid-area: image-woman;
+}
+.text-woman {
+  grid-area: text-woman;
+}
+.text-houseworks {
+  grid-area: text-houseworks;
+}
+.image-houseworks {
+  grid-area: image-houseworks;
+}
+.image-family {
+  grid-area: image-family;
+}
+.text-family {
+  grid-area: text-family;
+}
+
+@media (max-width: 740px) {
+  .about-me-content-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "image-woman" "text-woman" "image-houseworks" "text-houseworks" "image-family" "text-family";
+  }
+}
+.contact-me-section {
+  padding: 3rem;
+}
+.contact-me-section h2 {
+  color: rgb(3, 61, 3);
+}
+.contact-me-content {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(3, 61, 3);
+}
